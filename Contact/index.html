@@ -127,11 +127,24 @@
                             <label for="email">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
+			<div><style>
+                /* Hide spin buttons for number input */
+                input[type=number]::-webkit-inner-spin-button,
+                input[type=number]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0; /* Removes the margin */
+                }
+            
+                input[type=number] {
+                    -moz-appearance: textfield; /* Firefox */
+                }
+            </style>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="number" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
                             <small class="form-text text-muted">Please enter a 10-digit phone number.</small>
                         </div>
+		</div>
 			                        <div class="form-group">
                             <label for="enquiry-type">Enquiry Type</label>
                             <select class="form-control" id="enquiry-type" name="enquiry-type" required>
