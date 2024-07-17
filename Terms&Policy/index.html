@@ -2,33 +2,18 @@
 
 
 <!DOCTYPE html>
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>NEXGEN CORPORATION</title>
 	<link rel="icon" type="image/svg+xml" href="/logotital.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="image" content="/logotital.svg">
 	<meta name="description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India." />
 	<meta name="keywords" content="Home Appliances, Computer Consumables, Security Product, Power Tools, NEXGEN CORPORATION, nexgencorp.in" />
 	<meta name="author" content="nexgencorp.in" />
 
-  <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-  	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -84,11 +69,12 @@
     </style>
 		  <style>
     /* Basic styling for the page */
-    body {
+       body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-    /* Styling for the pop-up */
     .popup-overlay {
       display: none;
       position: fixed;
@@ -115,7 +101,8 @@
 
     .popup-content {
       width: 100%;
-      height: 100%;
+      height: calc(100% - 50px);
+      border: none;
     }
 
     .popup-header {
@@ -124,14 +111,30 @@
       padding: 10px;
       background-color: #f2f2f2;
       border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .popup-close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
       cursor: pointer;
       font-size: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .popup {
+        width: 90%;
+        height: 90%;
+      }
+
+      .popup-header {
+        font-size: 16px;
+        padding: 8px;
+      }
+
+      .popup-content {
+        height: calc(100% - 40px);
+      }
     }
   </style>
 	</head>
