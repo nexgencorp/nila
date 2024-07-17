@@ -158,16 +158,16 @@
   <div class="popup" id="popup">
     <div class="popup-header">
       <span>Terms of Use</span>
-      <span class="popup-close" onclick="closePopup()">×</span>
+<span class="popup-close" onclick="closePopup()">×</span>
     </div>
-    <iframe class="popup-content" id="popupContent" src="/Terms&Policy/Terms%20of%20Use.pdf" sandbox="allow-scripts"></iframe>
+    <iframe class="popup-content" id="popupContent" src=""></iframe>
   </div>
 
   <script>
     function showPopup() {
       document.getElementById('popup').style.display = 'block';
       document.getElementById('popupOverlay').style.display = 'block';
-      document.getElementById('popupContent').src = '/Terms&Policy/Terms%20of%20Use.pdf';
+      document.getElementById('popupContent').src = '/Terms&Policy/Terms%20of%20Use.pdf#toolbar=0&navpanes=0&scrollbar=0';
     }
 
     function closePopup() {
