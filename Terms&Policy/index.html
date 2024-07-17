@@ -100,7 +100,30 @@
 			</div>
 		</div>
 	</header>
-	
+	  <button onclick="showPopup()">Terms of Use</button>
+
+  <div class="popup-overlay" id="popupOverlay"></div>
+  <div class="popup" id="popup">
+    <div class="popup-header">
+      <span>Terms of Use</span>
+      <span class="popup-close" onclick="closePopup()">×</span>
+    </div>
+    <iframe class="popup-content" id="popupContent" src="/Terms&Policy" sandbox="allow-scripts"></iframe>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('popupOverlay').style.display = 'block';
+      document.getElementById('popupContent').src = 'your-pdf-file.pdf#toolbar=0&navpanes=0&scrollbar=0';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('popupOverlay').style.display = 'none';
+      document.getElementById('popupContent').src = '';
+    }
+  </script>
 	<footer id="fh5co-footer" role="contentinfo">
 	
 		<div class="container">
