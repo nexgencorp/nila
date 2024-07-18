@@ -1,211 +1,177 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NEXGEN CORPORATION</title>
-    <link rel="icon" type="image/svg+xml" href="/logotital.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="image" content="/logotital.svg">
-    <meta name="description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India." />
-    <meta name="keywords" content="Home Appliances, Computer Consumables, Security Product, Power Tools, NEXGEN CORPORATION, nexgencorp.in" />
-    <meta name="author" content="nexgencorp.in" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NEXGEN CORPORATION</title>
+	<link rel="icon" type="image/svg+xml" href="/logotital.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="image" content="/logotital.svg">
+	<meta name="description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India." />
+	<meta name="keywords" content="Home Appliances, Computer Consumables, Security Product, Power Tools, NEXGEN CORPORATION, nexgencorp.in" />
+	<meta name="author" content="nexgencorp.in" />
+	<meta property="og:title" content="NEXGEN CORPORATION"/>
+	<meta property="og:image" content="/logotital.svg"/>
+	<meta property="og:url" content="https://nexgencorp.in"/>
+	<meta property="og:site_name" content="NEXGEN CORPORATION"/>
+	<meta property="og:description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India."/>
+	<meta name="twitter:title" content="NEXGEN CORPORATION" />
+	<meta name="twitter:image" content="/logotital.svg" />
+	<meta name="twitter:url" content="https://nexgencorp.in" />
+	<meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="/css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/css/style.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="/css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="/css/icomoon.css">
-    <!-- Simple Line Icons -->
-    <link rel="stylesheet" href="/css/simple-line-icons.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Modernizr JS -->
-    <script src="/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4797F50XK8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4797F50XK8');
-    </script>
-    <style>
-        .sl-icon-energy {
-            display: inline-block;
-            width:150px;
-            height: 75px;
-            background-image: url('/logo.svg');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        /* Basic styling for the page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            width: 80%;
-            height: 80%;
-            z-index: 1000;
-        }
-
-        .popup-content {
-            width: 100%;
-            height: calc(100% - 50px);
-            border: none;
-        }
-
-        .popup-header {
-            font-size: 20px;
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #f2f2f2;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .popup-close {
-            cursor: pointer;
-            font-size: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .popup {
-                width: 90%;
-                height: 90%;
-            }
-
-            .popup-header {
-                font-size: 16px;
-                padding: 8px;
-            }
-
-            .popup-content {
-                height: calc(100% - 40px);
-            }
-        }
-    </style>
+	<!-- Modernizr JS -->
+	<script src="/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4797F50XK8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-4797F50XK8');
+	</script>
+	<style>
+		.sl-icon-energy {
+			display: inline-block;
+			width: 150px;  /* Set the width of the icon */
+			height: 75px; /* Set the height of the icon */
+			background-image: url('/logo.svg'); /* Path to your image */
+			background-size: cover; /* Cover the entire area */
+			background-position: center; /* Center the image */
+		}
+		.button {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.modal-dialog {
+			max-width: 90%;
+			width: auto;
+		}
+		.modal-body iframe {
+			width: 100%;
+			height: 70vh; /* 70% of the viewport height */
+		}
+	</style>
 </head>
 <body>
-    <div id="fh5co-page">
-        <header id="fh5co-header" role="banner">
-            <div class="container">
-                <div class="header-inner">
-                    <h1><a href="/index.html"><i class="sl-icon-energy"></i></a></h1>
-                    <nav role="navigation">
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/Contact">Contact</a></li>
-                            <li><a class="active" href="/Terms&Policy">Terms & Policy</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <button onclick="showPopup()">Terms of Use</button>
+	<div id="fh5co-page">
+		<header id="fh5co-header" role="banner">
+			<div class="container">
+				<div class="header-inner">
+					<h1><a href="/index.html"><i class="sl-icon-energy" aria-label="NexGen Corporation logo"></i></a></h1>
+					<nav role="navigation">
+						<ul>
+							<li><a class="active" href="/">Home</a></li>
+							<li><a href="/Contact">Contact</a></li>
+							<li><a href="/Terms&Policy">Terms & Policy</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Main Content Area -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<!-- Buttons Section -->
+					<button class="btn btn-primary button" onclick="openIframe('iframe1')">Button 1</button>
+					<button class="btn btn-primary button" onclick="openIframe('iframe2')">Button 2</button>
+					<button class="btn btn-primary button" onclick="openIframe('iframe3')">Button 3</button>
+					<button class="btn btn-primary button" onclick="openIframe('iframe4')">Button 4</button>
+				</div>
+				<div class="col-md-6">
+					<!-- Photo Section -->
+					<img src="/your-photo.jpg" alt="Your Photo" class="img-responsive" />
+				</div>
+			</div>
+		</div>
 
-        <div class="popup-overlay" id="popupOverlay"></div>
-        <div class="popup" id="popup">
-            <div class="popup-header">
-                <span>Terms of Use</span>
-                <span class="popup-close" onclick="closePopup()">×</span>
-            </div>
-            <iframe id="myIframe" src="your-source-url" width="600" height="400" frameborder="0" scrolling="no"></iframe>
-        </div>
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="col-md-3 col-sm-12 col-xs-12">
+					<h2>About Us</h2>
+					<p>NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.</p>
+				</div>
+				<div class="col-md-6 col-md-push-1 col-sm-12 col-xs-12">
+					<h3>We Deal With</h3>
+					<ul class="float">
+						<li><a href="#">Home Appliances</a></li>
+						<li><a href="#">Computer Consumables</a></li>
+						<li><a href="#">Security Product</a></li>
+						<li><a href="#">Power Tools</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-md-push-1 col-sm-12 col-xs-12">
+					<h3>Contact Us</h3>
+					<ul class="fh5co-social">
+						<li><a href="tel:+919035222277">9035222277</a></li>
+						<li><a href="mailto:support@nexgencorp.in">support@nexgencorp.in</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-        <script>
-            function showPopup() {
-                document.getElementById('popup').style.display = 'block';
-                document.getElementById('popupOverlay').style.display = 'block';
-                document.getElementById('myIframe').src = '/mnt/data/Terms%20of%20Use.pdf';
-                changeIframeStyle();
-            }
+	<!-- Iframe Modal Structure -->
+	<div id="iframeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="iframeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="iframeModalLabel">Iframe Content</h4>
+				</div>
+				<div class="modal-body">
+					<iframe id="iframe1" src="https://1drv.ms/b/c/67d7843da26ce649/IQNztA8OtkssQJMG-1bWnxKdARISR0aduiSLzjtxhrrS7UY" frameborder="0" scrolling="no" style="display: none;"></iframe>
+					<iframe id="iframe2" src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0" frameborder="0" scrolling="no" style="display: none;"></iframe>
+					<iframe id="iframe3" src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0" frameborder="0" scrolling="no" style="display: none;"></iframe>
+					<iframe id="iframe4" src="https://1drv.ms/b/c/67d7843da26ce649/IQMMH3VYkHwlRa88setsWv8CAbKYWsf1oYI7QCOv4vXxi68" frameborder="0" scrolling="no" style="display: none;"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            function closePopup() {
-                document.getElementById('popup').style.display = 'none';
-                document.getElementById('popupOverlay').style.display = 'none';
-                document.getElementById('myIframe').src = '';
-            }
-
-            function changeIframeStyle() {
-                var iframe = document.getElementById('myIframe');
-                iframe.style.width = "800px"; // Change width
-                iframe.style.height = "600px"; // Change height
-                iframe.style.border = "5px solid red"; // Change border
-                // Add more style changes as needed
-            }
-        </script>
-        <footer id="fh5co-footer" role="contentinfo">
-            <div class="container">
-                <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-                    <h2>About Us</h2>
-                    <p>NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.</p>
-                </div>
-                <div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-                    <h3>We Deal With</h3>
-                    <ul class="float">
-                        <li><a href="#&">Home Appliances</a></li>
-                        <li><a href="#&">Computer Consumables</a></li>
-                        <li><a href="#&">Security Product</a></li>
-                        <li><a href="#&">Power Tools</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-                    <h3>Contact Us</h3>
-                    <ul class="fh5co-social">
-                        <li><a href="tel:+919035222277">9035222277</a></li>
-                        <li><a href="mailto:support@nexgencorp.in">support@nexgencorp.in</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- jQuery -->
-    <script src="/js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="/js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="/js/jquery.waypoints.min.js"></script>
-    <!-- MAIN JS -->
-    <script src="/js/main.js"></script>
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/js/jquery.waypoints.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="/js/main.js"></script>
+	
+	<!-- Custom JS for Iframe Modal -->
+	<script>
+		function openIframe(iframeId) {
+			// Hide all iframes
+			document.querySelectorAll('iframe').forEach(iframe => iframe.style.display = 'none');
+			// Show the selected iframe
+			document.getElementById(iframeId).style.display = 'block';
+			// Show the modal
+			$('#iframeModal').modal('show');
+		}
+	</script>
 </body>
 </html>
