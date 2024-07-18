@@ -53,6 +53,7 @@
             background-image: url('/logo.svg'); /* Path to your image */
             background-size: cover; /* Cover the entire area */
             background-position: center; /* Center the image */
+            margin-bottom: 20px; /* Add margin below the logo */
         }
         .button-89 {
             --b: 3px;   /* border thickness */
@@ -75,6 +76,9 @@
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px; /* Adjust margin between buttons */
         }
 
         .button-89:hover,
@@ -100,6 +104,15 @@
         @media (max-width: 768px) {
             .modal-body iframe {
                 height: 50vh; /* Adjust height for mobile devices */
+            }
+
+            .row {
+                flex-direction: column-reverse; /* Reverse the column order for mobile */
+            }
+
+            .col-md-6 {
+                width: 100%; /* Full width for columns on mobile */
+                padding: 0 15px; /* Add padding for spacing */
             }
         }
     </style>
