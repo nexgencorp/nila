@@ -15,11 +15,7 @@
     <meta property="og:url" content="https://nexgencorp.in">
     <meta property="og:site_name" content="NEXGEN CORPORATION">
     <meta property="og:description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.">
-    <meta name="twitter:title" content="NEXGEN CORPORATION">
     <meta name="twitter:image" content="/logotital.svg">
-    <meta name="twitter:url" content="https://nexgencorp.in">
-    <meta name="twitter:card" content="summary_large_image">
-
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
@@ -58,11 +54,41 @@
             background-size: cover; /* Cover the entire area */
             background-position: center; /* Center the image */
         }
-        .button {
-            display: block;
-            width: 100%;
-            margin-bottom: 20px; /* Add margin for spacing between buttons */
+        .button-89 {
+            --b: 3px;   /* border thickness */
+            --s: .45em; /* size of the corner */
+            --color: #373B44;
+            
+            padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+            color: var(--color);
+            --_p: var(--s);
+            background:
+                conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+                var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+            transition: .3s linear, color 0s, background-color 0s;
+            outline: var(--b) solid #0000;
+            outline-offset: .6em;
+            font-size: 16px;
+
+            border: 0;
+
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
         }
+
+        .button-89:hover,
+        .button-89:focus-visible {
+            --_p: 0px;
+            outline-color: var(--color);
+            outline-offset: .05em;
+        }
+
+        .button-89:active {
+            background: var(--color);
+            color: #fff;
+        }
+
         .modal-dialog {
             max-width: 90%;
             width: auto;
@@ -104,10 +130,10 @@
                 </div>
                 <div class="col-md-6">
                     <!-- Buttons Section -->
-                    <button class="btn btn-primary button" onclick="openIframe('iframe1', 'Title for Button 1')">Button 1</button>
-                    <button class="btn btn-primary button" onclick="openIframe('iframe2', 'Title for Button 2')">Button 2</button>
-                    <button class="btn btn-primary button" onclick="openIframe('iframe3', 'Title for Button 3')">Button 3</button>
-                    <button class="btn btn-primary button" onclick="openIframe('iframe4', 'Title for Button 4')">Button 4</button>
+                    <button class="button-89" onclick="openIframe('iframe1', 'Title for Button 1')">Button 1</button>
+                    <button class="button-89" onclick="openIframe('iframe2', 'Title for Button 2')">Button 2</button>
+                    <button class="button-89" onclick="openIframe('iframe3', 'Title for Button 3')">Button 3</button>
+                    <button class="button-89" onclick="openIframe('iframe4', 'Title for Button 4')">Button 4</button>
                 </div>
             </div>
         </div>
