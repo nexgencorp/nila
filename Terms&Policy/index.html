@@ -109,14 +109,14 @@
         }
         .modal-body iframe {
             width: 100%;
-            height: 100%; /* 100% of the modal body height */
+            height: calc(100vh - 100px); /* Full height, accounting for padding */
             border: none; /* Remove iframe border */
         }
 
         @media (max-width: 768px) {
             .modal-body iframe {
-                height: 100%; /* Adjust height for mobile devices */
-				width: 100%;
+                height: calc(100vh - 100px); /* Adjust height for mobile devices */
+                width: 100%;
             }
 
             .row {
@@ -127,6 +127,11 @@
                 width: 100%; /* Full width for columns on mobile */
                 padding: 10px 10px; /* Add padding for spacing */
             }
+        }
+
+        .modal-title {
+            text-align: center;
+            width: 100%;
         }
     </style>
 </head>
