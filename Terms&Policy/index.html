@@ -261,28 +261,22 @@
         <script src="/js/main.js"></script>
 
         <script>
-            function openIframe(iframeId, title) {
-                // Hide all iframes
-                var iframes = document.querySelectorAll('iframe');
-                iframes.forEach(function (iframe) {
-                    iframe.style.display = 'none';
-                });
+        function openIframe(iframeId, title) {
+            // Hide all iframes
+            var iframes = document.querySelectorAll('iframe');
+            iframes.forEach(function (iframe) {
+                iframe.style.display = 'none';
+            });
 
-                // Show the selected iframe
-                var iframe = document.getElementById(iframeId);
-                iframe.style.display = 'block';
+            // Show the selected iframe
+            document.getElementById(iframeId).style.display = 'block';
 
-                // Set the modal title
-                document.getElementById('iframeModalLabel').innerText = title;
+            // Set the modal title
+            document.getElementById('iframeModalLabel').innerText = title;
 
-                // Adjust iframe height on mobile devices
-                if (window.innerWidth <= 768) {
-                    var windowHeight = window.innerHeight;
-                    iframe.style.height = windowHeight + 'px';
-                }
-
-                // Open the modal
-                $('#iframeModal').modal('show');
+            // Open the modal
+            $('#iframeModal').modal('show');
+        
             }
         </script>
     </div>
