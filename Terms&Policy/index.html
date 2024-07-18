@@ -156,10 +156,10 @@
                 </div>
                 <div class="col-md-6">
                     <!-- Buttons Section -->
-                    <button class="button-89" onclick="openIframe('iframe1', 'Title for Button 1')">Button 1</button>
-                    <button class="button-89" onclick="openIframe('iframe2', 'Title for Button 2')">Button 2</button>
-                    <button class="button-89" onclick="openIframe('iframe3', 'Title for Button 3')">Button 3</button>
-                    <button class="button-89" onclick="openIframe('iframe4', 'Title for Button 4')">Button 4</button>
+                    <button class="button-89" onclick="openIframe('https://1drv.ms/b/c/67d7843da26ce649/IQNztA8OtkssQJMG-1bWnxKdARISR0aduiSLzjtxhrrS7UY', 'Title for Button 1')">Button 1</button>
+                    <button class="button-89" onclick="openIframe('https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0', 'Title for Button 2')">Button 2</button>
+                    <button class="button-89" onclick="openIframe('https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0', 'Title for Button 3')">Button 3</button>
+                    <button class="button-89" onclick="openIframe('https://1drv.ms/b/c/67d7843da26ce649/IQMMH3VYkHwlRa88setsWv8CAbKYWsf1oYI7QCOv4vXxi68', 'Title for Button 4')">Button 4</button>
                 </div>
             </div>
         </div>
@@ -204,18 +204,7 @@
                     <h4 class="modal-title" id="iframeModalLabel">Iframe Content</h4>
                 </div>
                 <div class="modal-body">
-                    <iframe id="iframe1"
-                        src="https://1drv.ms/b/c/67d7843da26ce649/IQNztA8OtkssQJMG-1bWnxKdARISR0aduiSLzjtxhrrS7UY"
-                        frameborder="0" scrolling="no"></iframe>
-                    <iframe id="iframe2"
-                        src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0"
-                        frameborder="0" scrolling="no"></iframe>
-                    <iframe id="iframe3"
-                        src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0"
-                        frameborder="0" scrolling="no"></iframe>
-                    <iframe id="iframe4"
-                        src="https://1drv.ms/b/c/67d7843da26ce649/IQMMH3VYkHwlRa88setsWv8CAbKYWsf1oYI7QCOv4vXxi68"
-                        frameborder="0" scrolling="no"></iframe>
+                    <iframe id="iframeContent" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
@@ -233,9 +222,8 @@
     <script src="/js/main.js"></script>
 
     <script>
-        function openIframe(iframeId, modalTitle) {
-            // Set iframe src dynamically based on iframeId
-            var iframeSrc = document.getElementById(iframeId).src;
+        function openIframe(iframeSrc, modalTitle) {
+            // Get the modal
             var modal = $('#iframeModal');
             
             // Set modal title
