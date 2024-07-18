@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,22 @@
     <link rel="icon" type="image/svg+xml" href="/logotital.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="image" content="/logotital.svg">
-    <meta name="description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.">
-    <meta name="keywords" content="Home Appliances, Computer Consumables, Security Product, Power Tools, NEXGEN CORPORATION, nexgencorp.in">
+    <meta name="description"
+        content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.">
+    <meta name="keywords"
+        content="Home Appliances, Computer Consumables, Security Product, Power Tools, NEXGEN CORPORATION, nexgencorp.in">
     <meta name="author" content="nexgencorp.in">
     <meta property="og:title" content="NEXGEN CORPORATION">
     <meta property="og:image" content="/logotital.svg">
     <meta property="og:url" content="https://nexgencorp.in">
     <meta property="og:site_name" content="NEXGEN CORPORATION">
-    <meta property="og:description" content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.">
+    <meta property="og:description"
+        content="NexGen Corporation is one of the top retail brands, with 300+ Products Retail Sales in Pan India.">
     <meta name="twitter:image" content="/logotital.svg">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    
+
     <!-- Animate.css -->
     <link rel="stylesheet" href="/css/animate.css">
     <!-- Icomoon Icon Fonts -->
@@ -41,44 +45,52 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4797F50XK8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'G-4797F50XK8');
     </script>
     <style>
         .sl-icon-energy {
             display: inline-block;
-            width: 150px;  /* Set the width of the icon */
-            height: 75px; /* Set the height of the icon */
-            background-image: url('/logo.svg'); /* Path to your image */
-            background-size: cover; /* Cover the entire area */
-            background-position: center; /* Center the image */
-            margin-bottom: 20px; /* Add margin below the logo */
+            width: 150px;
+            /* Set the width of the icon */
+            height: 75px;
+            /* Set the height of the icon */
+            background-image: url('/logo.svg');
+            /* Path to your image */
+            background-size: cover;
+            /* Cover the entire area */
+            background-position: center;
+            /* Center the image */
+            margin-bottom: 20px;
+            /* Add margin below the logo */
         }
+
         .button-89 {
-            --b: 3px;   /* border thickness */
-            --s: .45em; /* size of the corner */
-            --color: #373B44;
-            
+            --b: 3px;
+            /* border thickness */
+            --s: .45em;
+            /* size of the corner */
+            --color: #373b44;
             padding: calc(.5em + var(--s)) calc(.9em + var(--s));
             color: var(--color);
             --_p: var(--s);
-            background:
-                conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-                var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+            background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
             transition: .3s linear, color 0s, background-color 0s;
             outline: var(--b) solid #0000;
             outline-offset: .6em;
             font-size: 16px;
-
             border: 0;
-
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
             display: block;
             width: 100%;
-            margin-bottom: 15px; /* Adjust margin between buttons */
+            margin-bottom: 15px;
+            /* Adjust margin between buttons */
         }
 
         .button-89:hover,
@@ -96,29 +108,42 @@
         .modal-dialog {
             max-width: 90%;
             width: auto;
+            padding: 5px; /* Desktop view padding */
         }
+
         .modal-body iframe {
             width: 100%;
-            height: 70vh; /* 70% of the viewport height */
+            height: calc(70vh - 10px); /* Adjusted height considering padding */
+            margin: 5px 0; /* Adjusted margin */
         }
 
         @media (max-width: 768px) {
+            .modal-dialog {
+                max-width: 100%;
+                width: auto;
+                padding: 10px 1px; /* Mobile view padding */
+            }
+
             .modal-body iframe {
-                height: 100%; /* Adjust height for mobile devices */
-				width: 100%;
+                height: calc(100% - 22px); /* Adjusted height considering padding */
+                margin: 10px 0; /* Adjusted margin */
             }
 
             .row {
-                flex-direction: column-reverse; /* Reverse the column order for mobile */
+                flex-direction: column-reverse;
+                /* Reverse the column order for mobile */
             }
 
             .col-md-6 {
-                width: 100%; /* Full width for columns on mobile */
-                padding: 10px 10px; /* Add padding for spacing */
+                width: 100%;
+                /* Full width for columns on mobile */
+                padding: 10px 10px;
+                /* Add padding for spacing */
             }
         }
     </style>
 </head>
+
 <body>
     <div id="fh5co-page">
         <header id="fh5co-header" role="banner">
@@ -182,18 +207,28 @@
     </div>
 
     <!-- Iframe Modal Structure -->
-    <div id="iframeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="iframeModalLabel" aria-hidden="true">
+    <div id="iframeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="iframeModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="iframeModalLabel">Iframe Content</h4>
                 </div>
                 <div class="modal-body">
-                    <iframe id="iframe1" src="https://1drv.ms/b/c/67d7843da26ce649/IQNztA8OtkssQJMG-1bWnxKdARISR0aduiSLzjtxhrrS7UY" frameborder="0" scrolling="no" style="display: none;"></iframe>
-                    <iframe id="iframe2" src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0" frameborder="0" scrolling="no" style="display: none;"></iframe>
-                    <iframe id="iframe3" src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0" frameborder="0" scrolling="no" style="display: none;"></iframe>
-                    <iframe id="iframe4" src="https://1drv.ms/b/c/67d7843da26ce649/IQMMH3VYkHwlRa88setsWv8CAbKYWsf1oYI7QCOv4vXxi68" frameborder="0" scrolling="no" style="display: none;"></iframe>
+                    <iframe id="iframe1"
+                        src="https://1drv.ms/b/c/67d7843da26ce649/IQNztA8OtkssQJMG-1bWnxKdARISR0aduiSLzjtxhrrS7UY"
+                        frameborder="0" scrolling="no" style="display: none;"></iframe>
+                    <iframe id="iframe2"
+                        src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0"
+                        frameborder="0" scrolling="no" style="display: none;"></iframe>
+                    <iframe id="iframe3"
+                        src="https://1drv.ms/b/c/67d7843da26ce649/IQNJ99VU4PC9RoQmkCANQHUdAWUddajWXiTnt8NRqM0maB0"
+                        frameborder="0" scrolling="no" style="display: none;"></iframe>
+                    <iframe id="iframe4"
+                        src="https://1drv.ms/b/c/67d7843da26ce649/IQMMH3VYkHwlRa88setsWv8CAbKYWsf1oYI7QCOv4vXxi68"
+                        frameborder="0" scrolling="no" style="display: none;"></iframe>
                 </div>
             </div>
         </div>
@@ -205,10 +240,10 @@
         function openIframe(iframeId, title) {
             // Hide all iframes
             var iframes = document.querySelectorAll('iframe');
-            iframes.forEach(function(iframe) {
+            iframes.forEach(function (iframe) {
                 iframe.style.display = 'none';
             });
-            
+
             // Show the selected iframe
             document.getElementById(iframeId).style.display = 'block';
 
@@ -220,4 +255,5 @@
         }
     </script>
 </body>
+
 </html>
