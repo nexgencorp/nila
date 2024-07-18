@@ -33,9 +33,11 @@
 
     <!-- Modernizr JS -->
     <script src="/js/modernizr-2.6.2.min.js"></script>
-
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
     <script src="/js/respond.min.js"></script>
-  
+    <![endif]-->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4797F50XK8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -99,11 +101,11 @@
             width: 100%;
             height: 70vh; /* 70% of the viewport height */
         }
+
         @media (max-width: 768px) {
             .modal-body iframe {
-                height: 70vh; /* Adjust height for mobile devices */
-		width: 100%;
-		padding-top: 15px;
+                height: 100%; /* Adjust height for mobile devices */
+				width: 100%;
             }
 
             .row {
@@ -112,7 +114,7 @@
 
             .col-md-6 {
                 width: 100%; /* Full width for columns on mobile */
-                padding: 7px 7px; /* Add padding for spacing */
+                padding: 10px 10px; /* Add padding for spacing */
             }
         }
     </style>
@@ -217,15 +219,5 @@
             $('#iframeModal').modal('show');
         }
     </script>
-    	<!-- jQuery -->
-	<script src="/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="/js/jquery.waypoints.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="/js/main.js"></script>
 </body>
 </html>
