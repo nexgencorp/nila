@@ -108,25 +108,31 @@
         .modal-dialog {
             max-width: 90%;
             width: auto;
-            padding: 5px; /* Desktop view padding */
+            padding: 5px;
+            /* Desktop view padding */
         }
 
         .modal-body iframe {
             width: 100%;
-            height: calc(70vh - 10px); /* Adjusted height considering padding */
-            margin: 5px 0; /* Adjusted margin */
+            height: calc(70vh - 10px);
+            /* Adjusted height considering padding */
+            margin: 5px 0;
+            /* Adjusted margin */
         }
 
         @media (max-width: 768px) {
             .modal-dialog {
                 max-width: 100%;
                 width: auto;
-                padding: 10px 1px; /* Mobile view padding */
+                padding: 10px 1px;
+                /* Mobile view padding */
             }
 
             .modal-body iframe {
-                height: calc(100% - 22px); /* Adjusted height considering padding */
-                margin: 10px 0; /* Adjusted margin */
+                height: calc(100% - 22px);
+                /* Adjusted height considering padding */
+                margin: 10px 0;
+                /* Adjusted margin */
             }
 
             .row {
@@ -234,8 +240,17 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="/js/main.js"></script>
+
     <script>
         function openIframe(iframeId, title) {
             // Hide all iframes
